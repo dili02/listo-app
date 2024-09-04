@@ -158,24 +158,24 @@ interface ExternalLinkProps extends LinkProps {
   className?: string;
 }
 
-export const ExternalLink: FC<ExternalLinkProps> = ({
-  children,
-  href,
-  className,
-  ...props
-}) => {
-  return (
-    <Link
-      href={href}
-      className={cn(className)}
-      rel="noopener noreferrer"
-      target="_blank"
-      {...props}
-    >
-      {children}
-    </Link>
-  );
-};
+// export const ExternalLink: FC<ExternalLinkProps> = ({
+//   children,
+//   href,
+//   className,
+//   ...props
+// }) => {
+//   return (
+//     <Link
+//       href={href}
+//       className={cn(className)}
+//       rel="noopener noreferrer"
+//       target="_blank"
+//       {...props}
+//     >
+//       {children}
+//     </Link>
+//   );
+// };
 
 function ThemeToggler() {
   return (
