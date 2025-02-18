@@ -1,5 +1,5 @@
-import MobileNavigation from "./_components/mobile-navigation";
-import Sidebar from "./_components/sidebar";
+// import MobileNavigation from "./_components/mobile-navigation";
+// import Sidebar from "./_components/sidebar";
 import { Toaster } from "sonner";
 
 export default function TableroLayout({
@@ -18,11 +18,12 @@ export default function TableroLayout({
           <div className="p-6 h-max">{children}</div>
         </div>
       </div> */}
-      <div className="w-full h-full">
+      {/* <div className="w-full h-full">
         <MobileNavigation />
         <div className="container">{children}</div>
       </div>
-      <Toaster position="bottom-center" />
+      <Toaster position="bottom-center" /> */}
+      {children}
     </>
   );
 }

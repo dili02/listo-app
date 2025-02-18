@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
+import TailwindCSSIndicator from "@/components/tailwindcss-indicator";
 
 const monserrat = Montserrat({ subsets: ["latin"] });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={monserrat.className}>{children}</body>
+      <body className={monserrat.className}>
+        {children}
+        <TailwindCSSIndicator />
+      </body>
     </html>
   );
 }
