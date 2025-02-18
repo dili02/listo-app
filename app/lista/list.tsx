@@ -104,7 +104,7 @@ const List = (props: Props) => {
             // "Limpieza",
           ];
     }
-    return null;
+    return [];
     // return [
     //   "Otros",
     //   "Frutas y Verduras",
