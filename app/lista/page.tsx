@@ -82,7 +82,7 @@ interface ItemCompra {
   precio: number;
 }
 
-export default function page({}: Props) {
+export default function Page({}: Props) {
   const [items, setItems] = React.useState<ItemCompra[]>();
   const [nuevoItem, setNuevoItem] = React.useState("");
   const [isFilterOpen, setIsFilterOpen] = React.useState(false);
